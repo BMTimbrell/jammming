@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../resources/Track.module.css';
 
-function Track({key, name, artist, album, button, updatePlaylist, track}) {
+function Track({name, artist, album, button, updatePlaylist, track}) {
     
     return (
         <div>
