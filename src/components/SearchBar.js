@@ -27,12 +27,10 @@ function SearchBar({updateSearchResults}) {
         updateSearchResults(resultsList);
     }
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" />
-                <button>Search</button>
-            </form>
-        </div>
+        <form onSubmit={handleSubmit}>
+            <input type="text" />
+            <button>Search</button>
+        </form>
     );
 }
 

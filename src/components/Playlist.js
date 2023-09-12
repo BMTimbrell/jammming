@@ -1,8 +1,14 @@
 import React from 'react';
+import Tracklist from './Tracklist';
 
-function Playlist() {
+function Playlist({playlist, updatePlaylist}) {
     return (
-        <div></div>
+        <form>
+            <h2>Playlists</h2>
+            <input />
+            <Tracklist type="playlist" tracks={playlist} updatePlaylist={updatePlaylist} />
+            <button>Save To Spotify</button>
+        </form>
     );
 }
 

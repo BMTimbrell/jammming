@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from '../resources/Track.module.css';
 
-function Track({key, name, artist, album}) {
+function Track({key, name, artist, album, button, updatePlaylist, track}) {
+    
     return (
         <div>
-            <li key={key} className={styles.track}>
-                
-                {name}{artist}{album}
-            </li> 
+            <h3>{name}</h3>
+            <span>Artist: {artist} </span>
+            <span>Album: {album}</span>
         </div>
     );
 }

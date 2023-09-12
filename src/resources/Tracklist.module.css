@@ -1,3 +1,7 @@
 .tracklist {
     list-style-type: none;
 }
+
+.track {
+    border-bottom: 1px solid black;
+}
