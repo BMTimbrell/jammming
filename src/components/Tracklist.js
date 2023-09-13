@@ -10,14 +10,13 @@ function Tracklist({type, tracks, updatePlaylist}) {
             <ul className={styles.tracklist}>
                 {tracks.map(track => (
                     <li key={track.id} className={styles.track}>
-                        <Track name={track.name} artist={track.artist} album={track.album} />
+                        <Track name={track.name} artist={track.artists[0].name} album={track.album.name} />
                         <button onClick={type === "search" ? () => handleAdd(track) : () => handleRemove(track)}>
                             {type === "search" ? "Add" : "Remove"}
                         </button>
                     </li>   
                 ))}
             </ul>
-           
         </div>
     );
 }

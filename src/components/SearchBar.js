@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {searchTracks} from '../modules/fetchRequests';
 
-function SearchBar({updateSearchResults}) {
-    const resultsList = [
+function SearchBar({updateSearchResults, accessToken}) {
+    let resultsList = [
         {
             name: 'blah',
             artist: 'blah',
@@ -21,14 +22,16 @@ function SearchBar({updateSearchResults}) {
             id: 2
         }
     ];
-    
-    const handleSubmit = (e) => {
+    const [text, setText] = useState('');
+    const handleTextChange = ({target}) => setText(target.value);
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        resultsList = await searchTracks(accessToken, text);
         updateSearchResults(resultsList);
     }
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" />
+            <input type="text" onChange={handleTextChange} />
             <button>Search</button>
         </form>
     );
