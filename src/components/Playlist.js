@@ -20,7 +20,7 @@ function Playlist({name, playlist, updatePlaylist, updatePlaylistName, trackUris
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={styles.playlist}>
             <h2>{name || defaultName}</h2>
             <input type="text" placeholder="Enter Playlist Name" onChange={updatePlaylistName} value={name} />
             <p className={warningStyle}>You can't save an empty playlist!</p>

@@ -7,11 +7,17 @@
 
 .track {
     border-bottom: 1px solid #DDE6ED;
-    text-align: left;
     width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 2fr 1fr;
 }
 
 .track button {
-    border-radius: 2px;
-
+    width: 1.5625rem;
+    height: 1.5625rem;
+    line-height: 0;
+    text-align: center;
+    padding: 0;
 }

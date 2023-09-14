@@ -12,7 +12,7 @@ function Tracklist({type, tracks, updatePlaylist}) {
                     <li key={track.id} className={styles.track}>
                         <Track name={track.name} artist={track.artists[0].name} album={track.album.name} />
                         <button onClick={type === "search" ? () => handleAdd(track) : () => handleRemove(track)}>
-                            {type === "search" ? "Add" : "Remove"}
+                            {type === "search" ? "+" : "-"}
                         </button>
                     </li>   
                 ))}
