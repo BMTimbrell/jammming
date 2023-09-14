@@ -4,7 +4,9 @@ function requestAccessToken() {
     let url = 'https://accounts.spotify.com/authorize';
     url += '?response_type=token';
     url += '&client_id=' + encodeURIComponent(client_id);
+    url += '&scope=playlist-modify-public';
     url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
+
     window.location = url;
 }
 
@@ -24,7 +26,7 @@ function getTokenExpiry() {
         const startIndex = hash.indexOf('expires_in=') + 11;
         const endIndex = hash.length;
         const expiry = parseInt(hash.substring(startIndex, endIndex));
-        return expiry * 1000;
+        return Date.now() + expiry * 1000;
     }
     return 0;
 }

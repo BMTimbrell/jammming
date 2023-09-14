@@ -1,7 +1,17 @@
 .tracklist {
     list-style-type: none;
+    width: 80%;
+    margin: auto;
+    padding-left: 0;
 }
 
 .track {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #DDE6ED;
+    text-align: left;
+    width: 100%;
+}
+
+.track button {
+    border-radius: 2px;
+
 }
