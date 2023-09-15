@@ -57,7 +57,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Jamming</h1>
+      <h1>Jammming</h1>
       <div className={window.location.hash ? 'hidden' : ''}>
         <h2 style={{color: '#DDE6ED'}}>You must login to Spotify to use this app</h2>
         <button id='login' onClick={() => requestAccessToken()}>Log in</button>
