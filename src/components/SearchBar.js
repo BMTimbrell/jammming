@@ -18,9 +18,9 @@ function SearchBar({updateSearchResults, accessToken}) {
         }
     }
     return (
-        <form id={styles.search} onSubmit={handleSubmit} >
+        <form onSubmit={handleSubmit} >
             <input type="text" onChange={handleTextChange} />
-            <input type="submit" value="Search" />
+            <input id={styles.search} type="submit" value="Search" />
         </form>
     );
 }

@@ -60,7 +60,7 @@ function App() {
       <h1>Jamming</h1>
       <div className={window.location.hash ? 'hidden' : ''}>
         <h2 style={{color: '#DDE6ED'}}>You must login to Spotify to use this app</h2>
-        <button onClick={() => requestAccessToken()}>Log in</button>
+        <button id='login' onClick={() => requestAccessToken()}>Log in</button>
       </div>
       <div className={!window.location.hash ? 'hidden' : 'main'}>
         <div id="searchbar"><SearchBar updateSearchResults={updateSearchResults} accessToken={accessToken} /></div>

@@ -8,7 +8,7 @@
 }
 
 .success {
-    color: green;
+    color: rgb(0, 255, 0);
     display: block;
 }
 
@@ -17,5 +17,24 @@
     color: #DDE6ED;
     min-height: 31.25rem;
     width: 80%;
+    margin-bottom: 0.625rem;
+    padding-bottom: 0.625rem;
 }
 
+#save {
+    margin: 0.625rem;
+    border-radius: 5px;
+    padding: 0.3125rem;
+    background-color: #526D82;
+    border: 0;
+    color: #DDE6ED;
+}
+
+#save:hover {
+    background-color: #9DB2BF;
+}
+
+#save:active {
+    background-color: #DDE6ED;
+    color: #526D82;
+}

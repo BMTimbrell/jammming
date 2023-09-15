@@ -1,3 +1,18 @@
 #search {
-    
+    margin-left: 0.3125rem;
+    margin: 0.625rem;
+    border-radius: 5px;
+    padding: 0.625rem;
+    background-color: #27374D;
+    border: 0;
+    color: #DDE6ED;
+}
+
+#search:hover {
+    background-color: #9DB2BF;
+    color: #27374D;
+}
+
+#search:active {
+    background-color: #DDE6ED;
 }
