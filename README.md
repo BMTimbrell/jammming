@@ -1,7 +1,6 @@
 # Jammming
 
-![jammming](https://github.com/BMTimbrell/jammming/assets/97784102/b135dfa4-d1e1-42b6-812f-31fe4f37d492)
-
+![jammming](https://github.com/BMTimbrell/jammming/assets/97784102/a47edc3f-f619-4015-92ed-01d586881610)
 
 ## About
 
