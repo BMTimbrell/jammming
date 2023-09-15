@@ -7,7 +7,15 @@
     display: block;
 }
 
+.success {
+    color: green;
+    display: block;
+}
+
 .playlist {
     background-color: #27374D;
     color: #DDE6ED;
+    min-height: 31.25rem;
+    width: 80%;
 }
+
