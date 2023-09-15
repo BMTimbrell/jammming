@@ -5,7 +5,7 @@
 
 ## About
 
-Jammming is a web app made with React and uses the Spotify api to search for songs on Spotify
+Jammming is a web app made with React. It uses the Spotify API to search for songs on Spotify
 and add them to a custom playlist. Its main feature is the ability save playlists to a user's Spotify account.
 
 ## How to run
