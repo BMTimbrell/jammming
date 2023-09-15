@@ -22,7 +22,7 @@
 }
 
 #save {
-    margin: 0.625rem;
+    margin: 0.9375rem;
     border-radius: 5px;
     padding: 0.3125rem;
     background-color: #526D82;
@@ -37,4 +37,11 @@
 #save:active {
     background-color: #DDE6ED;
     color: #526D82;
+}
+
+#nameField {
+    width: 12.5rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid white;
 }

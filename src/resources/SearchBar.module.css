@@ -1,4 +1,4 @@
-#search {
+#searchButton {
     margin-left: 0.3125rem;
     margin: 0.625rem;
     border-radius: 5px;
@@ -8,11 +8,19 @@
     color: #DDE6ED;
 }
 
-#search:hover {
+#searchButton:hover {
     background-color: #9DB2BF;
     color: #27374D;
 }
 
-#search:active {
+#searchButton:active {
     background-color: #DDE6ED;
+}
+
+#searchBar {
+    height: 1.875rem;
+    width: 9.375rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    text-align: center;
 }

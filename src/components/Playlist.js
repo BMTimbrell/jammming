@@ -37,7 +37,7 @@ function Playlist({name, playlist, updatePlaylist, updatePlaylistName, trackUris
     return (
         <form onSubmit={handleSubmit} className={styles.playlist}>
             <h2>{name || defaultName}</h2>
-            <input type="text" placeholder="Enter Playlist Name" onChange={updatePlaylistName} value={name} />
+            <input id={styles.nameField} type="text" placeholder="Enter Playlist Name" onChange={updatePlaylistName} value={name} />
             <p className={messageStyle}>{messageText}</p>
             <Tracklist type="playlist" tracks={playlist} updatePlaylist={updatePlaylist} />
             <input id={styles.save} type="submit" value="Save To Spotify" />
