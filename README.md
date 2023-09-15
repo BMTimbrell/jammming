@@ -1,5 +1,8 @@
 # Jammming
 
+![jammming](https://github.com/BMTimbrell/jammming/assets/97784102/b135dfa4-d1e1-42b6-812f-31fe4f37d492)
+
+
 ## About
 
 Jammming is a web app made with React and uses the Spotify api to search for songs on Spotify
