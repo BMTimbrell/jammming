@@ -1,6 +1,6 @@
 function requestAccessToken() {
     const client_id = '54e6f6d238684fc7adfaf4bf6a3d32bd';
-    const redirect_uri = 'http://localhost:3000';
+    const redirect_uri = 'https://bmtimbrell.github.io/jammming';
     let url = 'https://accounts.spotify.com/authorize';
     url += '?response_type=token';
     url += '&client_id=' + encodeURIComponent(client_id);

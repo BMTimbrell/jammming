@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     if (window.location.hash) {
       const myTimeout = setTimeout(() => {
-        window.location = 'http://localhost:3000';
+        window.location = 'https://bmtimbrell.github.io/jammming';
       }, getTokenExpiry() - Date.now());
       return () => clearTimeout(myTimeout);
     } 
